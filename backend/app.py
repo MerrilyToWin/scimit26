@@ -19,7 +19,10 @@ app = FastAPI(title="SCIMIT '26 Chatbot API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # restrict in production
+    allow_origins=[
+        "https://merrilytowin.github.io"
+    ],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
