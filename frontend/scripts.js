@@ -1,5 +1,4 @@
-       const API_URL = "http://127.0.0.1:8000/chat";
-
+       const API_URL = "https://scimit26.onrender.com/chat";
         async function sendMessage() {
             const input = document.getElementById("userInput");
             const message = input.value.trim();
