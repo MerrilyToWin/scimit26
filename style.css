@@ -396,6 +396,7 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 2.5rem;
+            align-items: stretch; /* KEY FIX */
         }
 
         .stat-card {
