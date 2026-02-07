@@ -17,6 +17,15 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 # --------------------------------------------------
 app = FastAPI(title="SCIMIT '26 Chatbot API")
 
+@app.get("/")
+def health_check():
+    return {
+        "status": "ok",
+        "service": "SCIMIT26 Chatbot",
+        "message": "Backend is awake"
+    }
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
